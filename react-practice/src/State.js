@@ -34,6 +34,10 @@ class State extends Component {
       })
    }
 
+   componentDidUpdate(prevProps, prevState){
+      console.log("prevProps is ", prevProps, " prevState is ", prevState, " and current State is ", this.state)
+   }
+
    render() {
 
       const { num, name } = this.state
